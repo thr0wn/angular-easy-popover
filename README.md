@@ -1,4 +1,4 @@
-# angular-easy-loading
+# angular-easy-popover
 
 This directive easily turns possible to create popovers associated with any kind of DOM elements.
 
