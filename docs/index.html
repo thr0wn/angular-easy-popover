@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angular easy loading demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <link href="angular-easy-popover.css" rel="stylesheet">
+        <link href="demo.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src="angular-easy-popover.js"></script>
+        <script src="demo.js"></script>
+    </head>
+    <body ng-app="demo-app" ng-controller="DemoCtrl">
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="header">
+                    <h2>Angular easy popover example</h2>
+                </div>
+                <hr>
+                <div class="body">
+                    <ul>
+                        <li><p class="inline-block">thr-popover should be bound to some DOM element, like a icon:</p>&nbsp;<i id="gear-icon" class="disable-select fa fa-cog fa-lg"></i></li>
+                        <li><p class="inline-block">The popover content can be almost anything, like a image:</p>&nbsp;<i id="image-icon" class="disable-select fa fa-picture-o fa-lg"></i></li>
+                        <li>
+                            <p class="inline-block">It is possible to choose the popover side:</p>&nbsp;
+                            <i id="image-icon-left" class="disable-select fa fa-arrow-left fa-lg"></i>&nbsp;
+                            <i id="image-icon-right" class="disable-select fa fa-arrow-right fa-lg"></i>
+                        </li>
+                    </ul>
+                    <thr-popover bind-to="#gear-icon">
+                        popover content
+                    </thr-popover>
+                    <thr-popover bind-to="#image-icon" class="popover-without-padding">
+                        <img src="orlando.jpg" width="500" height="250">
+                    </thr-popover>
+                    <thr-popover bind-to="#image-icon-left" class="popover-without-padding">
+                        <img src="orlando.jpg" width="500" height="250">
+                    </thr-popover>
+                    <thr-popover bind-to="#image-icon-right" side="right" class="popover-without-padding">
+                        <img src="orlando.jpg" width="500" height="250">
+                    </thr-popover>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    font-family: 'Lato';
+    background-image: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/snow.png");
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 1em;
+}
+
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.popover-without-padding .popover-container {
+    padding: 0;
+}

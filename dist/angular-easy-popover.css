@@ -1,0 +1,14 @@
+thr-popover, .popover-container {
+    display: none;
+}
+
+.popover-container {
+    position: absolute;
+    text-align: justify;
+    background: rgba(0, 0, 0, .85);
+    padding: 5px;
+    z-index: 1;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
