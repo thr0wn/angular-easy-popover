@@ -4,8 +4,9 @@ This directive easily turns possible to create popovers associated with any kind
 
 ## Installation
 
-1. Set `angular-easy-popover` as a dependencie of your AngularJS module.
-2. Add a script tag pointing to `dist/angular-easy-popover.min.js` or `dist/angular-easy-popover.js` and a link tag pointing `dist/angular-easy-popover.min.css` or `dist/angular-easy-popover.css` to your index.html.
+1. Be sure that AngulsJS 1.x and jQuery are imported.
+2. Set `angular-easy-popover` as a dependencie of your AngularJS module.
+3. Add a script tag pointing to `dist/angular-easy-popover.min.js` or `dist/angular-easy-popover.js` and a link tag pointing `dist/angular-easy-popover.min.css` or `dist/angular-easy-popover.css` to your index.html.
 
 ## Usage
 
