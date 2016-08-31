@@ -10,7 +10,7 @@ angular.module('angular-easy-popover', []).directive('thrPopover', [function () 
             closeOnClick: '@',
             side: '@'
         },
-        template: '<div class="popover-container">\n                <ng-transclude></ng-transclude>\n            </div>',
+        template: '<div class="popover-container">\n                <div ng-transclude></div>\n            </div>',
         link: function link(scope, element) {
             var isOpen = false;
             var container = element.find('.popover-container');

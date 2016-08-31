@@ -12,7 +12,7 @@ angular
             },
             template:
             `<div class="popover-container">
-                <ng-transclude></ng-transclude>
+                <div ng-transclude></div>
             </div>`,
             link: (scope, element) => {
                 let isOpen = false;
